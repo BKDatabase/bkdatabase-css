@@ -1,0 +1,132 @@
+/* Mã CSS đặt ở đây sẽ áp dụng cho mọi giao diện */
+
+/* Kích hoạt cài đặt CSS từ các trang chứa CSS khác trong Wiki */
+/*@import url('/w/index.php?title=MediaWiki:Social.css&action=raw&ctype=text/css');*/
+@import url('/w/index.php?title=MediaWiki:HighlightLinks.css&action=raw&ctype=text/css');
+
+/* Tiles */
+ 
+.tiles {
+	border-spacing: 0;
+	margin: 0 auto;
+	max-width: 750px;
+	table-layout: fixed;
+	width: 98%;
+}
+ 
+.tiles td {
+	box-shadow: 0 0 10px #000;
+	outline: 1px solid #000;
+	position: relative;
+}
+ 
+.tiles td > div {
+	height: 150px;
+	overflow: hidden;
+}
+ 
+.tiles__description a {
+	align-items: center;
+	background-color: rgba(0, 0, 0, 0.2);
+	bottom: 0;
+	color: #fff !important;
+	display: flex;
+	font-size: 24px;
+	font-weight: bold;
+	justify-content: center;
+	left: 0;
+	height: 100%;
+	max-height: 100%;
+	position: absolute;
+	right: 0;
+	text-align: center;
+	text-decoration: none;
+	text-shadow: 1px 1px 0 #000, 2px 1px 0 #000, 1px 2px 0 #000, 2px 2px 0 #000, 3px 3px 4px #000;
+	text-transform: uppercase;
+	z-index: 1;
+}
+ 
+.tiles td:hover .tiles__description a {
+	background-color: rgba(0, 0, 0, 0.8);
+	max-height: 35px;
+	transition: background-color 0.5s, max-height 0.5s;
+}
+/********* [[Template:Ambox]] *********/
+.ambox {
+	--ambox-color: var(--wiki-accent-color);
+
+	border: 1px solid var(--wiki-content-border-color);
+	border-left: 10px solid var(--ambox-color);
+	border-radius: 2px;
+	display: flex;
+	align-items: center;
+	gap: .6em;
+	margin: 1em 0;
+	padding: 3px .6em;
+	background-color: var(--wiki-content-background-color--secondary);
+	box-shadow: 2px 2px 5px 0px #0002;
+}
+
+@media (min-width: 720px) {
+	.ambox {
+		margin-inline: 10%;
+	}
+}
+
+.ambox.tiny {
+	padding: .04rem .5em;
+	margin-inline: 0;
+	width: fit-content;
+}
+
+.ambox + .ambox {
+	margin-top: -.6em;
+}
+
+.ambox-content {
+	flex: 1;
+}
+
+.ambox-content p {
+	margin: .15em 0;
+}
+
+.ambox-title {
+	font-weight: bold;
+}
+/*SYSTEM MESSAGE*/
+.glitch-container {
+  font-family: 'Courier New', monospace;
+  background-color: #000;
+  color: #00ffcc;
+  padding: 1em;
+  border: 1px solid #00ffcc;
+  animation: blink-border 1s infinite;
+  box-shadow: 0 0 10px #00ffcc;
+}
+
+.glitch-text {
+  position: relative;
+  font-size: 1.2em;
+  animation: glitch 1.5s infinite;
+  margin-bottom: 0.5em;
+}
+
+.glitch-text.access-granted {
+  color: #00ff00;
+  animation: none;
+}
+
+@keyframes glitch {
+  0% { text-shadow: 1px 0 red, -1px 0 cyan; }
+  20% { text-shadow: -1px -1px red, 1px 1px cyan; }
+  40% { text-shadow: 2px -1px red, -2px 1px cyan; }
+  60% { text-shadow: -1px 2px red, 1px -2px cyan; }
+  80% { text-shadow: 0 0 red, 0 0 cyan; }
+  100% { text-shadow: 1px 0 red, -1px 0 cyan; }
+}
+
+@keyframes blink-border {
+  0%, 100% { border-color: #00ffcc; }
+  50% { border-color: #ff00cc; }
+}
