@@ -993,3 +993,76 @@ hr {
 	color: #4DB6B0;
 	background-color: #061016;
 }
+/* Wikibase */
+.wikibase-entitytermsview .wikibase-toolbar-container,
+.wikibase-entitytermsview .wikibase-toolbar-container .wikibase-toolbar-container {
+	background: none !important;
+}
+
+.wikibase-statementgrouplistview .wikibase-statementgroupview-property,
+.wikibase-statementgrouplistview .wikibase-statementlistview,
+.wikibase-statementview div.thumb img,
+.wikibase-statementview div.thumb audio,
+.wikibase-statementview div.thumb video,
+.wb-propertypage .wikibase-propertyview-datatype,
+.ui-widget .ui-suggester-list,
+.wikibase-entitytermsforlanguagelistview,
+.wikibase-entitytermsforlanguagelistview-header {
+	background: #061016 !important;
+}
+
+.wikibase-statementview {
+	border-bottom: 1.5px solid #4DB6B0 !important;
+}
+
+.wikibase-statementgrouplistview .wikibase-statementgroupview-property,
+.wikibase-statementgrouplistview .wikibase-statementgroupview-property.wb-edit,
+.valueview-ineditmode .valueview-input,
+.wikibase-statementgroupview-property.wb-edit,
+.wikibase-entitysearch-list .wb-entitysearch-suggestions,
+.wikibase-entitytermsforlanguagelistview {
+	background-color: #061016 !important;
+}
+
+.wikibase-statementgrouplistview .wikibase-statementlistview,
+.ui-suggester-list {
+	background-color: #061016 !important;
+	border-radius: 0px solid 8px solid 8px 0px !important;
+}
+
+.wikibase-statementlistview .wikibase-toolbar-wrapper,
+.wb-propertypage .wikibase-propertyview-datatype {
+	background-color: #061016 !important;
+}
+
+.wb-propertypage .wikibase-propertyview-datatype,
+.wikibase-entitysearch-list .wb-entitysearch-suggestions {
+	border-radius: solid 8px !important;
+}
+.ui-suggester-list a,
+.ui-widget.ui-suggester-list,
+.suggestions-special .special-query,
+.suggestions-special .special-label {
+	color: #99aacc;
+}
+
+.mw-echo-notifications-badge,
+.wikibase-toolbar-button .wb-icon,
+.skin-vector-legacy #pt-uls .uls-trigger::before,
+.vector-menu-dropdown .vector-menu-heading::after {
+	filter: invert(1) !important;
+}
+
+.vector-menu-tabs-legacy li {
+	background-image: unset !important;
+}
+
+.vector-menu-portal .vector-menu-heading,
+.vector-menu-dropdown .vector-menu-heading{
+	color: white;
+}
+
+.wikibase-entitytermsforlanguagelistview .wikibase-entitytermsforlanguagelistview-header .wikibase-entitytermsforlanguagelistview-header-row .wikibase-entitytermsforlanguagelistview-cell {
+	background-color: #061016 !important;
+	border-right-color: #061016 !important;
+}
