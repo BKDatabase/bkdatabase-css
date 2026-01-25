@@ -549,7 +549,6 @@ button {
 .oo-ui-popup {
   background-color: var(--bg);
 }
-
 /* CUSTOM CURSOR */
 body {
   cursor: url('/wiki/Special:FilePath/BKCursor.png'), pointer;
@@ -1111,9 +1110,6 @@ hr {
 .vector-limited-width-toggle {
     display: none;
 }
-.vector-sticky-header-container {
-    display: none !important;
-}
 .vector-pinnable-header-toggle-button {
     display: none !important;
 }
@@ -1128,7 +1124,10 @@ hr {
 	background-color: var(--bg);
 	border-color: #4DB6Be;
 }
-
+/* CUSTOM VECTOR STICKY BAR */
+.vector-sticky-header-context-bar-primary {
+  font-family: 'Aldrich'
+}
 /* WIKI EDITOR UI */
 .mw-editfont-monospace {
 	color: var(--teal);
@@ -1345,6 +1344,11 @@ overflow: hidden;
     box-shadow: 0 2px 2px 0 rgb(34 255 245);
     border-color: var(--teal);
 }
+.mw-body .mw-heading1 h1, .mw-body .mw-heading2 h2, .mw-body .mw-heading3 h3, .mw-body .mw-heading4 h4, .mw-body .mw-heading5 h5, .mw-body .mw-heading6 h6 {
+    margin-top: 0;
+    font-size: inherit;
+    color: white;
+}
 .cdx-button:enabled, .cdx-button.cdx-button--fake-button--enabled {
     background-color: var(--background-color-interactive-subtle, #f8f9fa);
     color: var(--color-base, #202122);
@@ -1440,4 +1444,32 @@ overflow: hidden;
 .wikibase-entitytermsforlanguagelistview .wikibase-entitytermsforlanguagelistview-header .wikibase-entitytermsforlanguagelistview-header-row .wikibase-entitytermsforlanguagelistview-cell {
 	background-color: #061016 !important;
 	border-right-color: #061016 !important;
+}
+/* MANAGEWIKI CUSTOM */
+.mw-special-ManageWiki #mw-content-text .oo-ui-menuLayout {
+    display: flex;
+}
+.mw-special-ManageWiki #mw-content-text .oo-ui-indexLayout-tabPanel,
+.mw-special-ManageWiki #mw-content-text .oo-ui-tabSelectWidget {
+    box-sizing: border-box;
+    height: 100%;
+}
+.mw-special-ManageWiki #mw-content-text .oo-ui-tabSelectWidget {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 0.5em;
+    width: 160px
+}
+.mw-special-ManageWiki #mw-content-text .oo-ui-tabSelectWidget .oo-ui-optionWidget {
+    background: none;
+    border: none;
+    border-left: 4px solid transparent;
+}
+.mw-special-ManageWiki #mw-content-text .oo-ui-tabSelectWidget .oo-ui-optionWidget .oo-ui-labelElement-label {
+    border: none;
+}
+.mw-special-ManageWiki #mw-content-text .oo-ui-tabSelectWidget .oo-ui-optionWidget-selected {
+    background: rgb(77, 182, 176);
+    border-left: 4px solid #056660;
+    border-radius: 2px 0 0 2px;
 }
