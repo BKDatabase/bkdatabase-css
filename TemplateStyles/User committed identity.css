@@ -1,0 +1,11 @@
+.user-committed-identity {
+	display: block;
+	font-size: 85%;
+	background-color: #E0E8FF;
+	border: 1px solid #E0E8FF;
+	margin: 0.2em 0;
+	padding: 0.1em 0.3em;
+	word-wrap: break-word;
+	overflow-wrap: break-word;
+	overflow: auto; /* creates a new block formatting context, clearing it of floats */
+}
