@@ -1,0 +1,80 @@
+/* .main-figure */
+.main-figure {
+    position: relative;
+    margin: auto;
+    text-align: center;
+}
+
+/** .main-figure-img **/
+.main-figure-img {
+	margin: auto;
+}
+
+.main-figure-img .figure-img img {
+    width: 100%;
+    height: auto !important;
+	max-width: 430px !important;
+}
+
+/** .main-figure-caption **/
+.main-figure-caption {
+	padding: 0.8em 1em 0.125em;
+}
+
+@media (min-width: 1024px) {
+	/** .main-figure-caption **/
+	.main-figure-caption {
+	    display: none;
+	}
+	
+	.main-figure:hover .main-figure-caption {
+	    display: block;
+	    position: absolute;
+	    left: 0;
+	    bottom: 0;
+	    overflow: hidden;
+	    width: 100%;
+	    height: auto;
+	    background: #fff;
+	    background: rgba(255, 255, 255, 0.9);
+	    color: black;
+	    padding-bottom: 1em;
+	    box-sizing: border-box;
+	}
+}
+
+@media (max-width: 1023px) {
+	/* .main-figure */
+	.main-figure {
+		max-width: none !important;
+	}
+}
+
+/*** fix bug <small> for skin citizen ***/
+body.skin-citizen small {
+	font-size: smaller;
+}
+
+/* Fix chế độ tối */
+@media (min-width: 1024px) {
+    /* Khi ở chế độ tối, nền caption phải là màu đen mờ, không phải trắng mờ */
+    html.skin-theme-clientpref-night .main-figure:hover .main-figure-caption {
+        background-color: rgba(32, 33, 34, 0.9) !important;
+        color: #fff;
+    }
+}
+
+@media (min-width: 1024px) and (prefers-color-scheme: dark) {
+    html.skin-theme-clientpref-os .main-figure:hover .main-figure-caption {
+        background-color: rgba(32, 33, 34, 0.9) !important;
+        color: #fff;
+    }
+}
+
+/** when box is empty **/
+.isEmpty {
+    padding: 4.5em;
+    color: #aaa;
+	font-size: 1.3em;
+    font-weight: bold;
+}
