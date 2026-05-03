@@ -1,0 +1,23 @@
+/* Mã CSS tại đây sẽ chỉ ảnh hưởng đến các thành viên tự động xác nhận */
+/* Hiện các mục ẩn có class="autoconfirmed-show". */
+div.autoconfirmed-show,
+p.autoconfirmed-show {
+  display: block !important;
+}
+
+span.autoconfirmed-show,
+small.autoconfirmed-show {
+  display: inline !important;
+}
+
+table.autoconfirmed-show {
+  display: table !important;
+}
+
+li.autoconfirmed-show {
+  display: list-item !important;
+}
+
+.unconfirmed-show {
+  display: none !important;
+}
