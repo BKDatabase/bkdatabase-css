@@ -449,11 +449,6 @@ indo
   color: var(--link-color) !important;
 }
 
-/* Removes the fade effect from all elements */
-*::after {
-  display: none !important;
-}
-
 /* Slideshows or Slide Show buttons Stylying */
 .oo-ui-buttonElement-frameless.oo-ui-iconElement>.oo-ui-buttonElement-button {
   min-width: 32px;
@@ -1124,4 +1119,111 @@ hr {
 .wikibase-entitytermsforlanguagelistview .wikibase-entitytermsforlanguagelistview-header .wikibase-entitytermsforlanguagelistview-header-row .wikibase-entitytermsforlanguagelistview-cell {
 	background-color: #061016 !important;
 	border-right-color: #061016 !important;
+}
+/********* [[Template:Ambox]] *********/
+.ambox {
+	--ambox-color: var(--wiki-accent-color);
+
+	border: 1px solid var(--wiki-content-border-color);
+	border-left: 10px solid var(--ambox-color);
+	border-radius: 2px;
+	display: flex;
+	align-items: center;
+	gap: .6em;
+	margin: 1em 0;
+	padding: 3px .6em;
+	background-color: var(--wiki-content-background-color--secondary);
+	box-shadow: 2px 2px 5px 0px #0002;
+}
+
+@media (min-width: 720px) {
+	.ambox {
+		margin-inline: 10%;
+	}
+}
+
+.ambox.tiny {
+	padding: .04rem .5em;
+	margin-inline: 0;
+	width: fit-content;
+}
+
+.ambox + .ambox {
+	margin-top: -.6em;
+}
+
+.ambox-content {
+	flex: 1;
+}
+
+.ambox-content p {
+	margin: .15em 0;
+}
+
+.ambox-title {
+	font-weight: bold;
+}
+/* SUBPAGE STYLE */
+.subpage {
+	padding: 10px 15px 8px 10px;
+	margin: 5px 0;
+	
+	background-color: #0d2024;
+	background-clip: content-box;
+	border: 1px #0d2024;
+	border-image: url(https://static.miraheze.org/tnowiki/0/05/Border-gallerybox.webp) 40 / 40px round;
+	
+	display: flex;
+	flex-flow: row nowrap;
+	gap: 10px;
+	
+	/*in case any subpage template displays in a flex*/
+	flex-basis: 400px;
+	max-width: 400px;
+}
+.subpage>p { /*usually holds the img element*/
+	margin: 0;
+}
+.subpage img {
+	max-width: 100px !important;
+	max-height: 100px !important;
+}
+.subpage>.textArea {
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: center;
+	gap: 5px;
+}
+.subpage>.textArea h3, .subpage>.textArea p {
+	padding: 0;
+	margin: 0;
+    background-color: #0d2024;
+}
+/* MANAGEWIKI CUSTOM */
+.mw-special-ManageWiki #mw-content-text .oo-ui-menuLayout {
+    display: flex;
+}
+.mw-special-ManageWiki #mw-content-text .oo-ui-indexLayout-tabPanel,
+.mw-special-ManageWiki #mw-content-text .oo-ui-tabSelectWidget {
+    box-sizing: border-box;
+    height: 100%;
+}
+.mw-special-ManageWiki #mw-content-text .oo-ui-tabSelectWidget {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 0.5em;
+    width: 160px
+}
+.mw-special-ManageWiki #mw-content-text .oo-ui-tabSelectWidget .oo-ui-optionWidget {
+    background: none;
+    border: none;
+    border-left: 4px solid transparent;
+}
+.mw-special-ManageWiki #mw-content-text .oo-ui-tabSelectWidget .oo-ui-optionWidget .oo-ui-labelElement-label {
+    border: none;
+}
+.mw-special-ManageWiki #mw-content-text .oo-ui-tabSelectWidget .oo-ui-optionWidget-selected {
+    background: rgb(77, 182, 176);
+    border-left: 4px solid #056660;
+    border-radius: 2px 0 0 2px;
 }
