@@ -1,6 +1,7 @@
-/* Code derived under CC BY-SA license from:
+/*
+ * Code derived under CC BY-SA license from:
  * - TNOPediA
- *
+ * 
  * Từ BKDatabase - Blutiges Kareuz: The Decline of The Millennium | Database
  * The Great Trial Await...
  *
@@ -376,6 +377,10 @@ h6,
   font-family: 'Aldrich', sans-serif;
 }
 
+header.vector-page-titlebar::after {
+	display: none !important;
+}
+
 /*Bullet list coloring*/
 ::marker {
     color: var(--teal);
@@ -424,6 +429,9 @@ figcaption {
 }
 .mwe-popups {
   background: var(--bg);
+}
+a.mwe-popups-extract::after {
+	display: none !important;
 }
 
 /* TABBER */
@@ -488,10 +496,8 @@ indo
 .mw-normal-catlinks>a {
   color: var(--teal) !important;
 }
-
-/* Removes the fade effect from all elements */
-*::after {
-  display: none !important;
+.mw-normal-catlinks>a>new {
+  color: var(--red) !important;
 }
 
 /* Slideshows or Slide Show buttons Stylying */
@@ -1473,3 +1479,22 @@ overflow: hidden;
     border-left: 4px solid #056660;
     border-radius: 2px 0 0 2px;
 }
+/* Change the external link icon to a PDF icon for all PDF files */
+.mw-parser-output a[href$=".pdf"].external,
+.mw-parser-output a[href*=".pdf?"].external,
+.mw-parser-output a[href*=".pdf#"].external,
+.mw-parser-output a[href$=".PDF"].external,
+.mw-parser-output a[href*=".PDF?"].external,
+.mw-parser-output a[href*=".PDF#"].external {
+	background-image: url(https://upload.wikimedia.org/wikipedia/commons/6/6c/PDF_icon.svg);
+	background-size: 16px;
+	/* @noflip */
+	padding: 8px 18px 8px 0;
+}
+/* Display "From BKDatabase, Blutiges Kareuz: The Decline of The Millennium | Database" in skins that support it,
+	   do not apply to print mode */
+	#siteSub {
+		display: block;
+		color: var(--teal);
+		font-size: 80%;
+	}
