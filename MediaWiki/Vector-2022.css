@@ -1221,21 +1221,38 @@ hr {
 }
 
 /* SYNTAX EDITOR */
+/** Old CodeMirror (CM5) **/
 .CodeMirror {
   background: var(--bg);
-  font-family: 'Aldrich';
   color: var(--teal);
 }
 .CodeMirror-gutters {
   border-right: 1px solid var(--teal);
   background-color: #033;
 }
+/** New CodeMirror (CM6) **/
+.cm-editor {
+	background: var(--bg);
+	color: var(--teal);
+	border-right: 1px solid var(--teal);
+	background-color: #033;
+}
 .oo-ui-buttonElement-frameless.oo-ui-iconElement > .oo-ui-buttonElement-button {
   border-color: var(--bg);
   border-style: solid;
   background-color: var(--teal);
 }
-
+.oo-ui-buttonElement-frameless.oo-ui-labelElement.oo-ui-iconElement > .oo-ui-buttonElement-button {
+  border-color: var(--bg);
+  border-style: solid;
+  background-color: var(--teal);
+}
+.oo-ui-buttonElement-frameless.oo-ui-labelElement.oo-ui-iconElement > .oo-ui-buttonElement-button {
+    padding-bottom: 1px;
+    padding-left: 25px;
+    padding-top: 10px;
+    background-color: #1d8a8a;
+}
 /* MANAGEWIKI STYLING */
 #managewiki .managewiki-submit-formfields {
   border-top: 1px solid var(--teal);
