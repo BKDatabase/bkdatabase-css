@@ -1514,3 +1514,7 @@ overflow: hidden;
 		color: var(--teal);
 		font-size: 80%;
 	}
+/* OTHER FIX */
+.ext-phonos-PhonosButton.oo-ui-buttonElement-frameless.oo-ui-labelElement.oo-ui-iconElement > .oo-ui-buttonElement-button {
+	padding-top: 0;
+}
