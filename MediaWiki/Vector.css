@@ -1240,12 +1240,7 @@ hr {
   border-style: solid;
   background-color: var(--teal);
 }
-.oo-ui-buttonElement-frameless.oo-ui-labelElement.oo-ui-iconElement > .oo-ui-buttonElement-button {
-  border-color: var(--bg);
-  border-style: solid;
-  background-color: var(--teal);
-}
-.oo-ui-buttonElement-frameless.oo-ui-labelElement.oo-ui-iconElement > .oo-ui-buttonElement-button {
+.cm-mw-toggle-wikieditor.oo-ui-buttonElement-frameless.oo-ui-labelElement.oo-ui-iconElement > .oo-ui-buttonElement-button {
     padding-bottom: 1px;
     padding-left: 25px;
     padding-top: 10px;
@@ -1514,7 +1509,3 @@ overflow: hidden;
 		color: var(--teal);
 		font-size: 80%;
 	}
-/* OTHER FIX */
-.ext-phonos-PhonosButton.oo-ui-buttonElement-frameless.oo-ui-labelElement.oo-ui-iconElement > .oo-ui-buttonElement-button {
-	padding-top: 0;
-}
