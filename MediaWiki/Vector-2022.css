@@ -1245,8 +1245,8 @@ hr {
 .cm-mw-toggle-wikieditor.oo-ui-buttonElement-frameless.oo-ui-labelElement.oo-ui-iconElement > .oo-ui-buttonElement-button {
     padding-bottom: 1px;
     padding-left: 25px;
-    padding-top: 10px;
-    background-color: #1d8a8a;
+    padding-top: 9px;
+    background-color: var(--teal);
 }
 /* MANAGEWIKI STYLING */
 #managewiki .managewiki-submit-formfields {
