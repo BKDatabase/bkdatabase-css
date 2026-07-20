@@ -1234,6 +1234,8 @@ hr {
 .cm-editor {
 	background: var(--bg);
 	color: var(--teal);
+}
+.cm-editor .cm-gutters {
 	border-right: 1px solid var(--teal);
 	background-color: #033;
 }
