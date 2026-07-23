@@ -498,6 +498,10 @@ indo
 .mw-normal-catlinks>a>new {
   color: var(--red) !important;
 }
+.mw-notification {
+	color: white;
+}
+
 /* Slideshows or Slide Show buttons Stylying */
 .oo-ui-buttonElement-frameless.oo-ui-iconElement>.oo-ui-buttonElement-button {
   min-width: 32px;
